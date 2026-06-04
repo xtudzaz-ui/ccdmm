@@ -1,156 +1,120 @@
-e// ==========================================
-// 1. THÔNG TIN CÁ NHÂN & GIỚI THIỆU
-// ==========================================
 export const about = {
     name: "Lữ Xuân Tú",
-    role: "Đại Ca",
+    role: "Đại Ca ",
+    about: "Một mẫu portfolio tối giản, tinh tế được xây dựng bằng Next.js. Giải pháp hoàn hảo cho các nhà phát triển muốn khẳng định thương hiệu cá nhân chuyên nghiệp một cách tinh gọn mà không rườm rà, phức tạp.",
     email: "contact@tuapi.dev",
-    avatar: "/avatar.jpg", // Nên thêm ảnh đại diện để giao diện sống động hơn
-    bio: "Một mẫu portfolio tối giản, hiện đại và tinh tế được xây dựng trên nền tảng Next.js. Giải pháp hoàn hảo cho các nhà phát triển muốn khẳng định thương hiệu cá nhân chuyên nghiệp mà không rườm rà, phức tạp.",
 };
 
-// ==========================================
-// 2. CẤU HÌNH SEO GIÚP TĂNG THỨ HẠNG GOOGLE
-// ==========================================
 export const seo = {
     title: `${about.name} | ${about.role}`,
-    description: "Mẫu portfolio Next.js tối giản, mượt mà dành cho lập trình viên muốn xây dựng không gian trực tuyến chuyên nghiệp và tinh gọn.",
-    keywords: ["portfolio", "lập trình viên", "web developer", "Next.js", "tạo portfolio", "tối giản", "Lữ Xuân Tú"],
-    url: "https://tuapi.dev", // Đường dẫn trang web của bạn
-    ogImage: "/og-image.jpg",  // Ảnh hiển thị khi chia sẻ link lên Facebook/Zalo
+    description: "Mẫu portfolio Next.js tối giản, sạch sẽ dành cho lập trình viên muốn xây dựng không gian trực tuyến chuyên nghiệp và tinh gọn.",
+    keywords: "portfolio, nhà phát triển web, Next.js, portfolio lập trình viên, portfolio tối giản",
 }
 
-// ==========================================
-// 3. CẤU HÌNH HÒM THƯ LIÊN HỆ
-// ==========================================
 export const forms = {
     formspreeUrl: "https://formspree.io/f/<url>",
 }
 
-// ==========================================
-// 4. KỸ NĂNG CÔNG NGHỆ (SKILLS)
-// ==========================================
 export const skills = [
-    { name: "HTML5", alt: "HTML5 Logo", icon: "/icons/html.svg" },
-    { name: "CSS3", alt: "CSS3 Logo", icon: "/icons/css.svg" },
-    { name: "JavaScript", alt: "JavaScript Logo", icon: "/icons/js.svg" },
-    { name: "Tailwind CSS", alt: "Tailwind CSS Logo", icon: "/icons/tailwind.svg" },
-    { name: "React.js", alt: "React.js Logo", icon: "/icons/react.svg" },
-    { name: "Next.js", alt: "Next.js Logo", icon: "/icons/nextjs.svg" },
+    { name: "HTML", alt: "html logo", icon: "/html.svg" },
+    { name: "CSS", alt: "css logo", icon: "/css.svg" },
+    { name: "JavaScript", alt: "js logo", icon: "/js.svg" },
+    { name: "Tailwind", alt: "tailwind logo", icon: "/tailwind.svg" },
+    { name: "React JS", alt: "react logo", icon: "/react.svg" },
+    { name: "Next JS", alt: "nextjs logo", icon: "/nextjs.svg" },
 ];
 
-// ==========================================
-// 5. MẠNG XÃ HỘI (Cấu trúc lại để dễ render bằng .map)
-// ==========================================
-export const socials = [
-    {
-        name: "Facebook",
-        url: "https://www.facebook.com/share/18gRh7Xb21/?mibextid=wwXIfr",
-        icon: "/icons/facebook.svg"
-    },
-    {
-        name: "GitHub",
-        url: "https://github.com/luxuantu", // Thay bằng link github thực tế của bạn
-        icon: "/icons/github.svg"
-    },
-    {
-        name: "LinkedIn",
-        url: "https://linkedin.com/in/luxuantu", // Thay bằng link linkedin thực tế của bạn
-        icon: "/icons/linkedin.svg"
-    }
-];
+export const socials = {
+    github: "https://www.facebook.com/share/18gRh7Xb21/?mibextid=wwXIfr",
+    twitter: "https://www.facebook.com/share/18gRh7Xb21/?mibextid=wwXIfr",
+    instagram: "https://www.facebook.com/share/18gRh7Xb21/?mibextid=wwXIfr",
+    facebook: "https://www.facebook.com/share/18gRh7Xb21/?mibextid=wwXIfr",
+};
 
-// ==========================================
-// 6. DỰ ÁN (PROJECTS)
-// ==========================================
 export const projects = {
-    // Dự án tiêu biểu hiển thị ở vị trí ghim đầu trang
-    featured: [
+    pinProjects: [
         {
-            title: "E-Commerce High-Performance",
-            description: "Hệ thống cửa hàng trực tuyến tốc độ cao với đầy đủ tính năng giỏ hàng, bộ lọc sản phẩm và quy trình thanh toán tối ưu, mang lại trải nghiệm mua sắm vượt trội.",
-            tags: ["Next.js", "Tailwind CSS", "Redux"],
-            github: "https://github.com/...",
-            demo: "https://..."
+            title: "Dự án Tiêu biểu 1",
+            description:
+                "Trang portfolio cá nhân hiện đại giúp trình diễn kỹ năng và các sản phẩm đã thực hiện. Thiết kế responsive tối ưu, hiệu ứng chuyển trang mượt mà và chuẩn SEO.",
+            tags: ["CSS", "React Js"],
+            link: "",
         },
         {
-            title: "Minimalist Developer Blog",
-            description: "Nền tảng blog tối giản tích hợp bộ lọc danh mục thông minh và giao diện đọc bài thân thiện. Không gian hoàn hảo để chia sẻ kiến thức và ý tưởng sáng tạo.",
-            tags: ["React.js", "Markdown", "CSS Modules"],
-            github: "https://github.com/...",
-            demo: "https://..."
+            title: "Dự án Tiêu biểu 2",
+            description:
+                "Không gian blog tối giản tích hợp bộ lọc danh mục thông minh và giao diện đọc bài thân thiện. Hệ thống hoàn hảo để chia sẻ kiến thức và các ý tưởng sáng tạo.",
+            tags: ["CSS", "React Js"],
+            link: "",
         },
         {
-            title: "Creative Portfolio Concept",
-            description: "Trang portfolio cá nhân hiện đại giúp nâng tầm thương hiệu và trình diễn kỹ năng. Thiết kế responsive tối ưu, hiệu ứng chuyển trang mượt mà và chuẩn SEO.",
-            tags: ["Next.js", "Framer Motion", "Tailwind"],
-            github: "https://github.com/...",
-            demo: "https://..."
+            title: "Dự án Tiêu biểu 3",
+            description:
+                "Cửa hàng trực tuyến tốc độ cao và khả năng mở rộng tốt với đầy đủ tính năng giỏ hàng, danh sách sản phẩm và quy trình thanh toán tối ưu, mang lại hiệu năng vượt trội.",
+            tags: ["CSS", "React Js"],
+            link: "",
         },
     ],
-    // Các dự án phụ/khác
-    others: [
+    otherProjects: [
         {
-            title: "Task Management App",
-            description: "Ứng dụng quản lý công việc hàng ngày với giao diện Kanban trực quan, hỗ trợ kéo thả và đặt lịch nhắc nhở.",
-            tags: ["JavaScript", "LocalDB"],
-            github: "https://github.com/...",
-            demo: ""
+            title: "Dự án Khác 4",
+            description:
+                "Trang portfolio cá nhân hiện đại giúp trình diễn kỹ năng và các sản phẩm đã thực hiện. Thiết kế responsive tối ưu, hiệu ứng chuyển trang mượt mà và chuẩn SEO.",
+            tags: ["CSS", "React Js"],
+            link: "",
         },
         {
-            title: "Weather Forecast Dashboard",
-            description: "Ứng dụng dự báo thời tiết real-time tích hợp API OpenWeatherMap, hiển thị biểu đồ nhiệt độ trực quan.",
-            tags: ["React.js", "Chart.js"],
-            github: "https://github.com/...",
-            demo: ""
-        }
+            title: "Dự án Khác 5",
+            description:
+                "Không gian blog tối giản tích hợp bộ lọc danh mục thông minh và giao diện đọc bài thân thiện. Hệ thống hoàn hảo để chia sẻ kiến thức và các ý tưởng sáng tạo.",
+            tags: ["CSS", "React Js"],
+            link: "",
+        },
+        {
+            title: "Dự án Khác 6",
+            description:
+                "Cửa hàng trực tuyến tốc độ cao và khả năng mở rộng tốt với đầy đủ tính năng giỏ hàng, danh sách sản phẩm và quy trình thanh toán tối ưu, mang lại hiệu năng vượt trội.",
+            tags: ["CSS", "React Js"],
+            link: "",
+        },
     ],
 };
 
-// ==========================================
-// 7. KINH NGHIỆM LÀM VIỆC (EXPERIENCE)
-// ==========================================
 export const experience = [
     {
-        role: "Frontend Developer",
-        company: "Tech Solutions",
-        duration: "01/2024 - Hiện tại",
-        description: "Chịu trách nhiệm phát triển và tối ưu hóa các ứng dụng web real-time bằng React.js và Next.js. Nâng cao hiệu năng giao diện (UI) và cải thiện đáng kể trải nghiệm người dùng (UX).",
+        title: "Frontend Developer tại Tech Solutions",
+        description:
+            "Tham gia xây dựng và bảo trì các ứng dụng web responsive bằng React.js và Next.js, giúp tối ưu hóa hiệu năng giao diện và nâng cao trải nghiệm người dùng.",
+        date: "15/01/2024",
     },
     {
-        role: "Web Developer Intern",
-        company: "Creative Studio",
-        duration: "06/2023 - 12/2023",
-        description: "Tham gia thiết kế layout website, xây dựng mã nguồn HTML/CSS chuẩn chỉnh và phối hợp cùng đội ngũ phát triển các tính năng JavaScript cho các dự án của khách hàng.",
+        title: "Thực tập sinh Web Developer tại Creative Studio",
+        description:
+            "Hỗ trợ thiết kế layout trang web, xây dựng mã nguồn HTML/CSS chuẩn chỉnh và phối hợp cùng đội ngũ phát triển các tính năng JavaScript cho các dự án khách hàng.",
+        date: "10/06/2023",
     },
     {
-        role: "Junior Developer",
-        company: "Innovate Labs",
-        duration: "09/2022 - 05/2023",
-        description: "Phát triển và kiểm thử các component frontend, tối ưu hóa tốc độ tải trang, đồng thời tích cực tham gia review code và giải quyết các lỗi hệ thống.",
+        title: "Junior Developer tại Innovate Labs",
+        description:
+            "Phát triển và kiểm thử các component frontend, tối ưu hóa tốc độ tải trang, đồng thời đóng góp tích cực vào các buổi review code và giải quyết lỗi hệ thống.",
+        date: "01/09/2022",
     },
 ];
 
-// ==========================================
-// 8. BÀI VIẾT / BLOG
-// ==========================================
 export const blogs = [
     {
         title: "Bản chất của React Hooks: Hiểu sâu trong 5 phút",
-        excerpt: "Khám phá cách React Hooks vận hành dưới "under the hood" và những lưu ý quan trọng để tránh re-render thừa.",
         date: "12/03/2025",
-        slug: "understanding-react-hooks",
+        link: "#",
     },
     {
         title: "CSS Grid vs Flexbox: Lựa chọn nào tối ưu cho layout của bạn?",
-        excerpt: "So sánh chi tiết hai tư duy dàn trang phổ biến nhất trong CSS hiện đại thông qua các case-study thực tế.",
         date: "25/12/2024",
-        slug: "css-grid-vs-flexbox",
+        link: "#",
     },
     {
         title: "Bí kíp tối ưu SEO toàn diện cho ứng dụng Next.js",
-        excerpt: "Hướng dẫn từng bước cấu hình Meta Tags, Sitemap, Robots.txt và tối ưu Core Web Vitals chuẩn chỉnh nhất.",
         date: "10/07/2024",
-        slug: "nextjs-seo-best-practices",
+        link: "#",
     },
 ];
